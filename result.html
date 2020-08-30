@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Apple Survey Result</title>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <style>
+        body {
+             background-image: url("./imgs/green_grass.jpg");
+             color: white;
+        }
+        
+        h1 {
+          color: lightgreen;
+          margin-left: 40px;
+        }
+        </style>
+ </head>
+<body>
+    <h1>GREEN APPLE SURVEY RESULT</h1>
+    <div id="results"></div>
+    <a href="index.html">Back to Green Apple Survey Form</a>
+    <script>
+        const resultList = document.getElementById('results')
+        new URLSearchParams(window.location.search).forEach((value, name) => {
+            resultList.append(`${name}: ${value}`)
+            resultList.append(document.createElement('br'))
+        })
+    </script>
+</body>
+</html>

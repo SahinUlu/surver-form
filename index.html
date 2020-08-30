@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GREEN APPLE SURVEY FORM</title>
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+        <link rel="preconnect" href="https://fonts.googleapis.com/">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+    </head>
+    <body>
+
+        <div id="container">
+          <h1 id="title"> 
+            <span>GREEN APPLE</span> SURVEY FORM
+          </h1>
+      
+          <h3 id="description">
+            Thank you for signing up at Green Apple. Tell us more about yourself
+          </h3>
+      
+          <form id="survey-form" action="result.html" method="GET" target="_blank">
+      
+            <div class="box">
+              <label for="name" id="name-label">Name</label><br>
+              <input type="text" name='name' placeholder="Please enter your name" id="name" required><br>
+            </div>
+      
+            <div class="box">
+              <label for="number" id="number-label">Age</label><br>
+              <input type="number" step="1" min="18" max="65" name='age' placeholder="Please enter your age" id="number" required><br>
+            </div>
+      
+            <div class="box">
+              <label for="email" id="email-label">Email</label><br>
+              <input type="email" name="email" placeholder="Please enter your Email" id="email" required><br>
+            </div>
+      
+            <div class="box">
+              <label for='dropdown' id="dropdown-label">Which content type do you prefer?</label><br>
+              <select name='content' id="dropdown">
+                <option value="Movie" selected>Movie</option>
+                <option value="Series">Series</option>
+                <option value="Documentary" >Documentary</option>
+              </select><br />
+            </div>
+      
+            <div class="box">
+              <label id="checkbox"> Which movie type do you watch? </label><br>
+              <label for="favorite-check"><input type="checkbox" id="favorite-check" name="movie4" value="Science Fiction" checked>
+               Science Fiction</label><br>
+              <label for="first-check"><input type="checkbox" id="first-check" name="movie1" value="Comedy">
+                Comedy</label><br>
+              <label for="second-check"><input type="checkbox" id="second-check" name="movie2" value="Action">
+                Action</label><br>
+              <label for="third-check"><input type="checkbox" id="third-check" name="movie3" value="Romance" >
+                Romance</label><br>
+            </div>
+      
+            <div class="box">
+              <label id="radiobtn">Gender</label><br>
+              <label for="first-radio"><input type="radio" id="first-radio" name="gender" value="male"> Male</label><br>
+              <label for="second-radio"><input type="radio" id="second-radio" name="gender" value="female"> Female</label><br>
+              <label for="third-radio"><input type="radio" id="third-radio" name="gender" value="other"> Prefer not to answer</label><br>
+            </div>
+      
+            <div class="box box-textarea">
+              <label id="feed-label">Feed Back</label><br>
+              <textarea class="text-area" name="message" rows="10" cols="56" placeholder="Additional Comment"></textarea><br />
+            </div>
+            <input type="submit" id="submit">
+          </form>
+        </div>
+      
+      
+    </body>
+      
+</html>
+      
